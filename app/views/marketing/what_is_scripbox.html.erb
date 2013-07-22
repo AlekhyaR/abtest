@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>scripbox – what is scripbox</title>
+    <% content_for :keywords, "mutual funds, mutual fund, mutual funds online, indian mutual funds, invest online, large cap, sectoral funds, equity mutual  funds, consistent performance, no bias mutual funds, best performing mutual funds, best mutual fund for SIP, top mutual fund sip, top mutual fund performance, top performing mutual funds for 2012, mutual funds for 2013, mutual funds returns, fund of funds" %>
+    <% content_for :description, "Invest in a basket of four pre-selected mutual funds with just one click. Stop Thinking. Start Investing." %>
+    <%= render(:partial => 'shared/head_section') %>
+    <%= stylesheet_link_tag "reset", "style", :media => "all" %>
+
+  <style type="text/css">
+    body{ margin: 0; }
+    .scrolling_header_bg_fixed{top:80px;}
+  </style>
+
+  <!--scrolling script-->
+  <%= stylesheet_link_tag "/fmslideshow_assets/fmslideshow.min.css", :media => 'screen' %>
+  <%= stylesheet_link_tag "/fmslideshow_assets/fmslideshow.min.css", :media => 'print' %>
+  <%= javascript_include_tag "jquery", "login_dropdown" %>
+  <script src="/fmslideshow_assets/fmslideshow.min.js"></script>
+    <script>
+
+        jQuery(function ($) {
+            $('#jq_fmslideshow').fmslideshow({
+
+                //Note: if you need to modify further see the available variable in fmslideshow.js file.
+
+                banner_width: 1004,
+                banner_height: 391,
+
+
+
+                //image_background : "fmslideshow_assets/bg.png",
+                image_topShadow: "/fmslideshow_assets/top_border1.png",
+                image_bottomShadow: "/fmslideshow_assets/bottom_border.png",
+
+                background_fullScreen: true,
+                background_move: true,
+                background_moveDistance: 980,
+
+                buttons_type: 1,
+                buttons_autoHide: true,
+
+                button_nextPrevious_autoHide: true,
+                button_nextPrevious_type: 1,
+                button_next_align: "C",
+                button_next_spacing: "0,490",
+                button_previous_align: "C",
+                button_previous_spacing: "0,-482",
+                
+                slideShow_delayTime: 0.5,
+                default_data_inOutDirection: '',
+                default_data_inOutDistance: 0
+
+            });
+        });
+
+    </script>
+  </head>
+
+<body>
+  <%= render 'shared/google_tag_manager' %>
+    <div class="center_fixed">
+        <!--HEADER START HERE-->
+        <div class="header">
+          <%= render 'header' %>
+          <%= render 'header_links' %>
+          <%= render 'header_menu' %>
+          <p class="scrolling_header_bg_fixed">
+              <!--<img src="fmslideshow_assets/fixed_bar.png"  alt="" border="0" />-->
+          </p>
+        </div>
+    </div>
+    <!--HEADER END-->
+    <!--BODY START HERE--> 
+    <div class="center_fixed">
+        <div class="container container_fixed"></div>
+    </div>
+    <div style="clear:both"></div>
+    <!--slider -->
+    <div class="main_slider" >
+    <div id="jq_fmslideshow" style="position: relative; overflow: hidden; background-color: #fff;" >
+        <div id="fmslideshow" style="visibility: hidden;">
+            <!--Slide 1 -->
+            <div data-slideDelayTime="1.9">
+                <img data-align="BL" data-spacing="26,195"
+                    data-starttime="1" data-staytime="" data-animationspeed="400" data-easeout="easeOutSine"
+                    class="imgSty" src="/assets/scroll/slider1-img_1.png" alt="" />
+                <img data-align="TL" data-spacing="24,325"
+                    data-starttime="1" data-staytime="" data-animationspeed="400" data-easeout="easeOutSine"
+                    class="imgSty" src="/assets/scroll/slider1-img_bar.png" alt="" />
+                <div data-align="LC" data-spacing="40,-70"
+                    data-starttime="1" class="divStyle">
+                    <img src="/assets/scroll/slider1-text_img1.jpg" alt="">
+                </div>
+                <div data-align="LC" data-spacing="40,15"
+                    data-starttime="1" class="divStyle">
+                    <img src="/assets/scroll/slider1-text_img2.jpg" alt="">
+                </div>
+                <div data-align="BL" data-spacing="61,35"
+                    data-starttime="1" class="divStyle">
+                    <p class="txtLarge" style="color: #808080;background:#fff; font-family: proxima-nova-n3; 
+                        font-size: 11px; width: 157px;padding:0px;">
+                     <img src="/assets/scroll/bhumika.jpg" alt="">
+                    </p>
+                </div>
+                <img data-align="BC" data-spacing="26,90"
+                    data-starttime="1" data-staytime="" data-animationspeed="400" data-easeout="easeOutSine"
+                    class="imgSty" src="/assets/scroll/slider1-img_2.png" alt="" />
+                <img data-align="TC" data-spacing="24,165"
+                    data-starttime="1" data-staytime="" data-animationspeed="400" data-easeout="easeOutSine"
+                    class="imgSty" src="/assets/scroll/slider1-img_bar.png" alt="" />
+                <div data-align="C" data-spacing="-50,-60"
+                    data-starttime="1" class="divStyle">
+                    <img src="/assets/scroll/slider1-text_img3.jpg" alt="">
+                </div>
+                <div data-align="BC" data-spacing="65,-86"
+                    data-starttime="1" class="divStyle" >
+                    <p class="txtLarge" style="color: #808080;background:#fff; font-family: proxima-nova-n3;
+                        font-size: 11px; width: 140px;padding:0px;">
+                        <img src="/assets/scroll/dalvir.jpg" alt="">
+                    </p>
+                </div>
+                <img data-align="BR" data-spacing="26,25"
+                    data-starttime="1" data-staytime="" data-animationspeed="400" data-easeout="easeOutSine"
+                    class="imgSty" src="/assets/scroll/slider1-img_3.png" alt="" />
+                <div data-align="TR" data-spacing="60,135"
+                    data-starttime="1" class="divStyle">
+                    <img src="/assets/scroll/slider1-text_img4.jpg" alt="">
+                </div>
+                <div data-align="TR" data-spacing="88,168"
+                    data-starttime="1" data-staytime="" class="divStyle">
+                    <p class="txtLarge" style="color: #808080;background:#fff; font-family: proxima-nova-n3; 
+                        font-size: 11px; width:145px;padding:0px;">
+                         <img src="/assets/scroll/sri.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <!--Slide 1 end-->
+            <!--Slide 2 -->
+            <div data-slideDelayTime="1.1">
+                <img data-align="TL" data-spacing="117,275"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider2-text_img1.jpg"
+                    alt="" />
+                <img data-align="TR" data-spacing="167,195"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider2-text_img2.jpg"
+                    alt="" />
+                <img data-align="TL" data-spacing="232,275"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider2-text_img3.jpg"
+                    alt="" />
+            </div>
+            <!--Slide 2 end-->
+            <!--Slide 3
+      <div> 
+           <img data-align="TC" data-spacing="160,0" data-inOutDirection="TC" data-inOutDistance="250" data-startTime="1" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" class="imgSty" src="/assets/scroll/slider3-text_img1.jpg" alt=""  />
+           <img data-align="BC" data-spacing="216,117" data-inOutDirection="BC" data-inOutDistance="250" data-startTime="1" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" class="imgSty" src="/assets/scroll/slider3-text_img2.jpg" alt=""  />
+           <img data-align="BL" data-spacing="103,395" data-inOutDirection="LR" data-inOutDistance="250" data-startTime="3" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" class="imgSty" src="/assets/scroll/slider3-text_img3.jpg" alt=""  />
+      </div>
+      Slide 3 -->
+            <!--Slide 4 -->
+            <div data-slideDelayTime="1.5">
+                <img data-align="LC" data-spacing="155,-72"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider4-text_img1.jpg"
+                    alt="" />
+                <img data-align="BC" data-spacing="194,-60"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider4-text_img2.jpg"
+                    alt="" />
+                <img data-align="BL" data-spacing="149,150"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider4-text_img3.jpg"
+                    alt="" />
+                <img data-align="BR" data-spacing="120,60" style="z-index: -500" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" class="imgSty" src="/assets/scroll/slider4-img.jpg"
+                    alt="" />
+                <img data-align="TR" data-spacing="220,90" style="z-index: 500" data-starttime="1" data-staytime="" data-animationspeed="1000"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider4-img1.png"
+                    alt="" />
+                <img data-align="TC" data-spacing="190,360" style="z-index: 500" data-starttime="1" data-staytime="" data-animationspeed="1000"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider4-img2.png"
+                    alt="" />
+                <img data-align="TC" data-spacing="157,360" style="z-index: 500" data-starttime="1" data-staytime="" data-animationspeed="1000"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider4-img3.png"
+                    alt="" />
+                <img data-align="TC" data-spacing="127,360" style="z-index: 500" data-starttime="1" data-staytime="" data-animationspeed="1000"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider4-img4.png"
+                    alt="" />
+            </div>
+            <!--Slide 4 end-->
+            <!--Slide 5 -->
+            <div data-slideDelayTime="1.9">
+                <img data-align="TL" data-spacing="56,130"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider5-text_img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="84,122"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider5-text_img2.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="203,120"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider5-text_img3.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="80,80" style="z-index: 5"
+                    data-starttime="1" data-staytime="" data-animationspeed="1700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider5-text_img4.png"
+                    alt="fmslideshow" />
+                <img data-align="BR" data-spacing="25,110" style="z-index: 10"
+                    data-starttime="1" data-staytime="" data-animationspeed="900"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider5-img.png"
+                    alt="fmslideshow" />
+            </div>
+            <!--Slide 5 end-->
+            <!--Slide 6 -->
+            <div data-slideDelayTime="1.9">
+                <img data-align="TL" data-spacing="113,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider6-text_img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="134,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider6-text_img2.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="206,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider6-text_img3.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="20,30"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider6-img.png" alt="fmslideshow" />
+            </div>
+            <!--Slide 7 -->
+            <div data-slideDelayTime="1.9">
+                <img data-align="TL" data-spacing="113,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider7-text_img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="133,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider7-text_img2.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="206,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider7-text_img3.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="25,180"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider7-img.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="80,350"
+                    data-starttime="1" data-staytime="" data-animationspeed="1300" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider7-text_img4.png" alt="fmslideshow" />
+            </div>
+            <!--Slide 7 end-->
+            <!--Slide 8 -->
+            <div data-slideDelayTime="1.5">
+                <img data-align="TL" data-spacing="140,98"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="205,98"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img2.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="20,20"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-img1.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="160,140"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-img.png" alt="fmslideshow" />
+                <img data-align="TC" data-spacing="140,95"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img3.png" alt="fmslideshow" />
+                <img data-align="TC" data-spacing="120,418"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img4.png" alt="fmslideshow" />
+            </div>
+            <!--Slide 8 end-->
+            <!--Slide 9 -->
+            <div data-slideDelayTime="1.9">
+                <img data-align="TL" data-spacing="132,55"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider9-text_img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="205,55"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider9-text_img1.png" alt="fmslideshow"
+                    style="position: relative; z-index: 1;" />
+                <img data-align="BR" data-spacing="0,0"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-img1.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="190,110"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider9-img1.png" alt="fmslideshow" />
+                <img data-align="TC" data-spacing="150,230"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img3.png" alt="fmslideshow" />
+                <img data-align="TC" data-spacing="140,445"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider8-text_img4.png" alt="fmslideshow" />
+            </div>
+            <!--Slide 9 end-->
+            <!--Slide 10 -->
+            <div data-slideDelayTime="1.1">
+            <img data-align="TR" data-spacing="50,105" style="z-index: -15" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider10-img.png"
+                    alt="fmslideshow" />
+                <img data-align="TL" data-spacing="111,68"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider10-text_img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="135,68"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider10-text_img1.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="25,150"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider10-img3.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="180,160" style="z-index: 5" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider10-img2.png"
+                    alt="fmslideshow" />
+                <img data-align="BR" data-spacing="220,165" style="z-index: 10" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider10-img1.png"
+                    alt="fmslideshow" />
+                
+            </div>
+            <!--Slide 10 end-->
+            <!--Slide 11 -->
+            <div data-slideDelayTime="1.1">
+                <img data-align="TL" data-spacing="111,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider10-text_img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="135,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider11-text_img5.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="50,120"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider11-img.png" alt="fmslideshow" />
+                <img data-align="C" data-spacing="25,272" style="z-index: 5" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider11-img2.png"
+                    alt="fmslideshow" />
+                <img data-align="C" data-spacing="-20,278" style="z-index: 10" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider11-img1.png"
+                    alt="fmslideshow" />
+            </div>
+            <!--Slide 11 end-->
+            <!--Slide 12 -->
+            <div data-slideDelayTime="1.1">
+                <img data-align="TL" data-spacing="111,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider10-text_img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="135,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider11-text_img.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="25,90"
+                    data-starttime="1" data-staytime="" data-animationspeed="700" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider12-img.png" alt="fmslideshow" />
+            </div>
+            <!--Slide 12 end-->
+            <!--Slide 13 -->
+            <div data-slideDelayTime="2.3">
+                <img data-align="TL" data-spacing="58,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="80,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="900" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="168,128"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img2.png" alt="fmslideshow" />
+                <img data-align="BL" data-spacing="50,150"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-img.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="170,330"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-img3.png" alt="fmslideshow" />
+                <img data-align="C" data-spacing="10,0"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img3.png" alt="fmslideshow" />
+                <img data-align="BC" data-spacing="70,-10"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-img1.png" alt="fmslideshow" />
+                <img data-align="TL" data-spacing="165,640"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-img3.png" alt="fmslideshow" />
+                <img data-align="TR" data-spacing="158,100"
+                    data-starttime="1" data-staytime="" data-animationspeed="1100" data-easein="easeOutQuart"
+                    data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img4.png" alt="fmslideshow" />
+                <img data-align="BR" data-spacing="170,123" style="z-index: 10" data-starttime="1" data-staytime="" data-animationspeed="1100"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider13-text_img5.png"
+                    alt="fmslideshow" />
+                <img data-align="TR" data-spacing="230,180" style="z-index: 15" data-starttime="1" data-staytime="" data-animationspeed="1100"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider13-img2.png"
+                    alt="fmslideshow" />
+            </div>
+            <!--Slide 13 end-->
+            <!--Slide 14
+       <div>  
+        
+            <img data-align="TL" data-spacing="112,125" data-inOutDirection="LR" data-inOutDistance="550" data-startTime="1" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" src="/assets/scroll/slider14-text_img.png" alt="fmslideshow" />
+         	<img data-align="TL" data-spacing="133,126" data-inOutDirection="LR" data-inOutDistance="550" data-startTime="2" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" src="/assets/scroll/slider14-text_img1.png" alt="fmslideshow" />
+            
+            <img data-align="TR" data-spacing="270,34" data-inOutDirection="BT" data-inOutDistance="50" data-startTime="5" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" src="/assets/scroll/slider14-img1.png" alt="fmslideshow" />  
+            <img data-align="BR" data-spacing="110,100" data-inOutDirection="TB" data-inOutDistance="50" data-startTime="5" data-stayTime="" data-animationSpeed="700" data-easeIn="easeOutQuart" data-easeOut="easeOutSine" src="/assets/scroll/slider14-img2.jpg" alt="fmslideshow" />          
+        </div>
+        Slide 14 end-->
+            <!--Slide 15 -->
+            <div data-slideDelayTime="1.1">
+                <img data-align="BL" data-spacing="20,344" style="z-index: 2" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-img1.png"
+                    alt="fmslideshow" />
+                <img data-align="BL" data-spacing="20,604" style="z-index: 2" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-img2.png"
+                    alt="fmslideshow" />
+                <img data-align="BC" data-spacing="20,80" style="z-index: 10" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-img.png"
+                    alt="fmslideshow" />
+                <img data-align="BL" data-spacing="160,274" style="z-index: 2" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-text_img.png"
+                    alt="fmslideshow" />
+                <img data-align="TC" data-spacing="55,20" style="z-index: 2" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-text_img1.png"
+                    alt="fmslideshow" />
+                <img data-align="TC" data-spacing="80,210" style="z-index: 10" data-starttime="1" data-staytime="" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider15-text_img2.png"
+                    alt="fmslideshow" />
+            </div>
+            <!--Slide 15 end-->
+            <!--Slide 16 -->
+            <div>
+                <img data-align="TL" data-spacing="118,320" style="z-index: 2" data-starttime="1" data-staytime="500" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider16-text_img.png"
+                    alt="fmslideshow" />
+                <img data-align="BC" data-spacing="248,210" style="z-index: 2" data-starttime="1" data-staytime="500" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider16-text_img1.png"
+                    alt="fmslideshow" />
+                <img data-align="BC" data-spacing="105,17" style="z-index: 10" data-starttime="1" data-staytime="500" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider16-text_img2.png"
+                    alt="fmslideshow" />
+                <img data-align="BC" data-spacing="30,0" style="z-index: 2" data-starttime="1" data-staytime="500" data-animationspeed="700"
+                    data-easein="easeOutQuart" data-easeout="easeOutSine" src="/assets/scroll/slider16-img.png"
+                    alt="fmslideshow" />
+            </div>
+            <!--Slide 16 end-->
+            <!-- End slide-->
+        </div>
+    </div> <div style="clear:both"></div></div>
+    <!--slider END -->
+    
+<div class="center_fixed width_fixed" style="margin:0px;">
+        <!--<div class="scrip_btn_outer">
+            <div class="buttonwrapperorange">
+                <p class="orangeoverbutton">
+                    <input type="submit" value="CHOOSE SCRIPBOX" /></p>
+            </div>
+        </div>-->
+        <div class="get_btn_outer">
+                <div class="choose_btn_lft">
+                </div>
+                <div class="choose_btn_mid">
+                    <a href="<%= new_user_registration_path %>">SIGN UP</a></div>
+                <div class="choose_btn_rgt">
+                </div>
+                <div class="btn_invest_wd no_border" style="width:auto;">
+                    <span>or <a href="<%= pages_how_does_it_work_path %>">HOW DOES IT WORK?</a></span>
+               </div>
+            </div>
+    </div>
+    <!--BODY END -->
+    <!--FOOTER START HERE -->
+    <div class="center_fixed">
+        <div class="footer">
+          <%= render 'shared/footer' %>
+        </div>
+        </div>
+        <!--FOOTER ENDS -->
+    </div>
+
+</body>
+</html>
